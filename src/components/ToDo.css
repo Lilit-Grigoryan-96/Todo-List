@@ -1,0 +1,85 @@
+body{
+    background-color: #5FC9D5;
+}
+
+.todo-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+.todo-app{
+    width: 30%;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 50px;
+    border-radius: 5px;
+}
+select{
+    width: 20%;
+}
+input{
+    width:70%;
+}
+input[type="text"], select{
+    height: 100%;
+    border: 1px solid #E8E8E8;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.item-btns{
+    display: flex;
+    width: 50px;
+}
+.todo-btn, .save{
+    height: 34px;
+    border-color: transparent;
+    background-color: #8F48E8;
+    color: #fff;
+    cursor: pointer;
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+    max-width: 90%;
+    margin: 20px auto;
+}
+li .item-conainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #F2F2F2;
+    cursor: pointer;
+}
+li{
+    padding-left: 10px;
+}
+.task-low{
+    background: yellow;
+}
+.task-normal{
+    background: orange;
+}
+.task-high{
+    background: #5EE83B;
+}
+.item-conainer p{
+    margin: 0;
+}
+.done .item-text{
+    text-decoration: line-through;
+}
+.close{
+    background-color: #EA4D3F;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+button[type="button"]{
+    margin: 0 10px;
+}
+.save{
+    margin-top: 20px;
+}

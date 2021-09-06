@@ -2,11 +2,10 @@ import React,{useState} from 'react'
 
 export default function ToDoForm({addToDo}) {
     const [value,setValue] = useState('');
-    const [options,setoptions] = useState('');
+    const [options,setoptions] = useState('low');
     function handleSubmit(event) {
         event.preventDefault();
         addToDo(value,options);
-
         setValue('');
     }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ToDoFilters({allTodos,filterTodos}) {
+const ToDoFilters = ({allTodos,filterTodos}) => {
     return (
         <div>
             <button onClick={allTodos} value="all" type="button">All</button>
@@ -8,3 +8,5 @@ export default function ToDoFilters({allTodos,filterTodos}) {
         </div>
     )
 }
+
+export default ToDoFilters;

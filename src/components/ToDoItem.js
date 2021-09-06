@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ToDoItem({todo, index, toggleCheck, removeTodo}) {
+const ToDoItem = ({todo, index, toggleCheck, removeTodo}) => {
     return (
             <li className={`${todo.done ? 'done' : ''} ${todo.status ? 'task-'+todo.status : ''}`}>
                 <div className="item-conainer">
@@ -14,4 +14,5 @@ export default function ToDoItem({todo, index, toggleCheck, removeTodo}) {
                 </div>
             </li>
     )
-}
+};
+export default ToDoItem;
